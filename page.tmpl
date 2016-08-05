@@ -3,20 +3,32 @@
 <head>
     {{if .title}}<title>{{.title}}</title>{{end}}
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
 <header>
 <a href="http://library.caltech.edu"><img src="/assets/orangebooks-logo.png" alt="Caltech Library logo"></a>
 <h1><a href="http://library.caltech.edu">Caltech Library</a></h1>
 </header>
+
+{{if .nav}}
 <nav>
 {{.nav}}
 </nav>
+{{end}}
 
+{{if .content}}
 <section>
 {{.content}}
 </section>
+{{end}}
+
+{{if .aside}}
+<aside>
+{{.aside}}
+</aside>
+{{end}}
+
 
 <footer>
     <span><h1><A href="http://caltech.edu">Caltech</a></h1></span>
