@@ -4,7 +4,7 @@
 all: index.html
 
 index.html: page.tmpl README.md nav.md
-	mkpage -m "title=string:Search API Demo" "content=README.md" "nav=nav.md" page.tmpl > index.html
+	mkpage -m "content=README.md" "nav=nav.md" page.tmpl > index.html
 
 clean:
 	/bin/rm index.html
