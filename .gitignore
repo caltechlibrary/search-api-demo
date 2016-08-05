@@ -1,0 +1,8 @@
+
+#
+# Project Ignores
+#
+*~
+*.swp
+bin/*
+dist/*
