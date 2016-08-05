@@ -9,5 +9,9 @@ index.html: page.tmpl README.md nav.md
 clean:
 	/bin/rm index.html
 
+save:
+	git commit -am "Quick Save"
+	git push origin master
+
 publish:
 	./publish.bash
